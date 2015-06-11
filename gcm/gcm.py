@@ -153,7 +153,7 @@ class GCM(object):
             payload['delay_while_idle'] = delay_while_idle
 
         if time_to_live:
-            payload['time_to_live'] = time_to_live
+            payload['time_to_live'] = str(time_to_live)
 
         if collapse_key:
             payload['collapse_key'] = collapse_key
